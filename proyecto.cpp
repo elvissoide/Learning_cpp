@@ -7,15 +7,15 @@ int main(int var0, char *var1[]) {
 		std::string arg{ var1[i] };
 		std::cout << "var1[" << i << "]: " << arg << std::endl;
 	}
-	if (var0 == 3) // Determina si existe 3 argumentos en la linea de comandos
+	if (var0 == 3)
 	{
-		std::string var2{var1[0]}; // Crea una cadena de texto del primer argumento
-		auto var3{ * (var1[1])}; // Toma el segundo argumento
-		auto var4{ var2.size() }; // Longitud de la cadena del segundo argumento
-		auto var5{ std::atoi(var1[2]) }; // El tercer argumento se convierte en entero
-		auto var6{ 0 }; // Inicializa en 0
-		auto var7{ 0 }; // Inicializa en 0
-		std::string var8{ var1[1] }; // Toma el segundo argumento
+		std::string var2{var1[0]};
+		auto var3{ * (var1[1])};
+		auto var4{ var2.size() };
+		auto var5{ std::atoi(var1[2]) };
+		auto var6{ 0 };
+		auto var7{ 0 };
+		std::string var8{ var1[1] };
 		while (true){
 			var6 += var8[var7++];
 			if (var7 >= static_cast<int>(var8.size())){
