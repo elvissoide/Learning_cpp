@@ -2,11 +2,6 @@
 #include <string>
 
 int main(int var0, char *var1[]) {
-	std::cout << "var0:" << var0 << std::endl;
-	for (int i = 0; i < var0; i++) {
-		std::string arg{ var1[i] };
-		std::cout << "var1[" << i << "]: " << arg << std::endl;
-	}
 	if (var0 == 3)
 	{
 		std::string var2{var1[0]};
